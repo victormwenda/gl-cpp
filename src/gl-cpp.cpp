@@ -7,14 +7,22 @@
 //============================================================================
 
 #include <iostream>
-#include "engine/GameEngine.h"
+#include <GL/glut.h>
 
 using namespace std;
 
+void onDraw() {
+	glClearColor(0.2f, 0.9f, 0.6f, 1.0f);
+	glClear (GL_COLOR_BUFFER_BIT);
+	glFlush();
+}
+
 int main(int argc, char **argv) {
 
-	GameEngine gameEngine;
-	gameEngine.openWindow(argc,argv);
-	gameEngine.drawWindowContent();
+	glutInit(&argc, argv);
+	glutCreateWindow("Game Window");
+	glutDisplayFunc (onDraw);
+	glutMainLoop();
 	return 0;
 }
+
