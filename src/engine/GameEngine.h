@@ -11,7 +11,7 @@
 class GameEngine {
 public:
 	GameEngine();
-	void openWindow();
+	void openWindow(int argc, char **argv);
 	void drawWindowContent();
 	virtual ~GameEngine();
 };

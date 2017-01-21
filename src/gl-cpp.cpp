@@ -11,10 +11,10 @@
 
 using namespace std;
 
-int main() {
+int main(int argc, char **argv) {
 
 	GameEngine gameEngine;
-	gameEngine.openWindow();
+	gameEngine.openWindow(argc,argv);
 	gameEngine.drawWindowContent();
 	return 0;
 }
