@@ -5,14 +5,22 @@
  *      Author: victor
  */
 
+#include <iostream>
+
 #include "GameEngine.h"
 
+using namespace std;
+
 GameEngine::GameEngine() {
-	// TODO Auto-generated constructor stub
-
+	std::cout << "Creating game engine" << std::endl;
 }
-
+void GameEngine::openWindow() {
+	std::cout << "Open game window" << std::endl;
+}
+void GameEngine::drawWindowContent() {
+	std::cout << "Drawing window content" << std::endl;
+}
 GameEngine::~GameEngine() {
-	// TODO Auto-generated destructor stub
+	std::cout << "Closing game engine" << std::endl;
 }
 

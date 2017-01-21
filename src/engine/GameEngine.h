@@ -11,6 +11,8 @@
 class GameEngine {
 public:
 	GameEngine();
+	void openWindow();
+	void drawWindowContent();
 	virtual ~GameEngine();
 };
 

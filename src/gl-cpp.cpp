@@ -7,9 +7,14 @@
 //============================================================================
 
 #include <iostream>
+#include "engine/GameEngine.h"
+
 using namespace std;
 
 int main() {
-	cout << "Sample OpenGL Game in C++" << endl; // prints Sample OpenGL Game in C++
+
+	GameEngine gameEngine;
+	gameEngine.openWindow();
+	gameEngine.drawWindowContent();
 	return 0;
 }
