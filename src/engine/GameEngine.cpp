@@ -17,6 +17,9 @@ void GameEngine::openWindow(int argc, char **argv) {
 	std::cout << "Open game window" << std::endl;
 
 }
+void GameEngine::onCreateWindow(const char * windowName) {
+	std::cout << "Created Window : " << windowName << std::endl;
+}
 void GameEngine::drawWindowContent() {
 	std::cout << "Drawing window content" << std::endl;
 }

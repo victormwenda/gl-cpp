@@ -12,6 +12,7 @@ class GameEngine {
 public:
 	GameEngine();
 	void openWindow(int argc, char **argv);
+	void onCreateWindow(const char * windowName);
 	void drawWindowContent();
 	virtual ~GameEngine();
 };
